@@ -1,0 +1,7 @@
+{'title': 'The Empire Strikes Back', 'author': 'George Lucas', 'genre': 'SciFi'}
+{'title': 'Star Wars', 'author': 'George Lucas', 'genre': 'SciFi'}
+{'title': 'ET', 'author': 'Steven Spielberg', 'genre': 'SciFi'}
+{'title': 'Harry Potter', 'author': 'J.K. Rowling', 'genre': 'Fiction'} 
+{'title': 'The Bible', 'author': 'GOD', 'genre': 'Religion'} 
+{'title': 'Calculus', 'author': 'Larson', 'genre': 'Math'} 
+{'title': 'The Bible II', 'author': 'GOD', 'genre': 'Religion'} 
