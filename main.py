@@ -21,8 +21,7 @@ def addBook(title,author,genre):
   fp.close()
 
 def removeBook(title):
-  print("REMOVING A BOOK FROM INVENTORY...")
-  print("")
+  
   for book in bookshelf:
     if book["title"]==title:
       bookshelf.remove(book)
@@ -31,9 +30,9 @@ def removeBook(title):
 def viewInventory():
   count=1
   if len(bookshelf)>0:
-    print("CURRENT BOOK INVENTORY LIST")
+    print("                   CURRENT BOOK INVENTORY LIST")
     print("")
-    print("    NAME OF BOOK              AUTHOR                   GENRE")
+    print("    NAME OF BOOK              AUTHOR                    GENRE")
     for book in bookshelf:
       print(f"{count:2d}. {book['title']:25s} {book['author']:25s} {book['genre']}")
       count+=1
@@ -69,14 +68,19 @@ while(gameLoop==True):
   os.system('clear')
   if choice =='1':
     print("ADDING A BOOK TO THE INVENTORY")
+    print("")
     title =input("Enter the title of the book: ")
     author = input("Enter the author of the book: ")
     genre = input("Enter the genre of the book: ")
     addBook(title,author,genre)
   elif choice =='2':
+    print("SEARCHING FOR A BOOK FROM INVENTORY...")
+    print("")
     author = input("Enter the author of the book: ")
     searchByAuthor(author)
   elif choice =='3':
+    print("REMOVING A BOOK FROM INVENTORY...")
+    print("")
     title = input("Enter the title of the book: ")
     removeBook(title)
   elif choice=='4':
