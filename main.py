@@ -21,6 +21,8 @@ def addBook(title,author,genre):
   fp.close()
 
 def removeBook(title):
+  print("REMOVING A BOOK FROM INVENTORY...")
+  print("")
   for book in bookshelf:
     if book["title"]==title:
       bookshelf.remove(book)
